@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_5"
+    android:padding="16dp">
+
+    <!-- Header -->
+
+    <!-- Recording Section -->
+
+    <!-- Smaller Buttons -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToHome2" />
+
+    <Button
+        android:id="@+id/btnGoToHome3"
+        android:layout_width="146dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/layout_bg_1"
+        android:fontFamily="@font/poppins"
+        android:text="Cover\nLetter"
+        android:textAlignment="gravity"
+        android:textColor="@color/goldyellowThird"
+        android:textColorHighlight="@color/goldyellowThird"
+        android:textColorHint="@color/goldyellowThird"
+        android:textColorLink="@color/goldyellowThird"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoToHome3"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToHome3"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+    <!-- Recently Searched Section -->
+
+    <Button
+        android:id="@+id/btnGoToHome2"
+        android:layout_width="146dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/layout_bg_1"
+        android:fontFamily="@font/poppins"
+        android:text="Resume"
+        android:textAlignment="gravity"
+        android:textColor="@color/goldyellowThird"
+        android:textColorHighlight="@color/goldyellowThird"
+        android:textColorHint="@color/goldyellowThird"
+        android:textColorLink="@color/goldyellowThird"
+        android:textSize="19sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoToHome2"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToHome2"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToHome3"
+        app:layout_constraintTop_toTopOf="@+id/btnGoToHome3"
+        app:srcCompat="@drawable/baseline_chat_24" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/btnGoToHome2"
+        app:layout_constraintTop_toTopOf="@+id/btnGoToHome2"
+        app:srcCompat="@drawable/baseline_chat_24" />
+
+    <TextView
+        android:id="@+id/txtViewGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Hello, Good Morning"
+        android:textColor="#AFACAC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="How can I help you today!"
+        android:textColor="#FAFAFA"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewGreeting" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="390dp"
+        android:layout_height="221dp"
+        android:elevation="-1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/black_lines" />
+</androidx.constraintlayout.widget.ConstraintLayout>
