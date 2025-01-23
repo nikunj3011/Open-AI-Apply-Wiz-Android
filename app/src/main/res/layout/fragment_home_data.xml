@@ -21,10 +21,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGoToHome2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnResumeClick" />
 
     <Button
-        android:id="@+id/btnGoToHome3"
+        android:id="@+id/btnCoverLetter"
         android:layout_width="146dp"
         android:layout_height="123dp"
         android:layout_marginTop="44dp"
@@ -48,14 +48,14 @@
         android:layout_height="35dp"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGoToHome3"
-        app:layout_constraintStart_toStartOf="@+id/btnGoToHome3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCoverLetter"
+        app:layout_constraintStart_toStartOf="@+id/btnCoverLetter"
         app:srcCompat="@drawable/baseline_arrow_forward_24" />
 
     <!-- Recently Searched Section -->
 
     <Button
-        android:id="@+id/btnGoToHome2"
+        android:id="@+id/btnResumeClick"
         android:layout_width="146dp"
         android:layout_height="123dp"
         android:layout_marginStart="4dp"
@@ -79,8 +79,8 @@
         android:layout_height="35dp"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGoToHome2"
-        app:layout_constraintStart_toStartOf="@+id/btnGoToHome2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnResumeClick"
+        app:layout_constraintStart_toStartOf="@+id/btnResumeClick"
         app:srcCompat="@drawable/baseline_arrow_forward_24" />
 
     <ImageView
@@ -89,8 +89,8 @@
         android:layout_height="18dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/btnGoToHome3"
-        app:layout_constraintTop_toTopOf="@+id/btnGoToHome3"
+        app:layout_constraintStart_toStartOf="@+id/btnCoverLetter"
+        app:layout_constraintTop_toTopOf="@+id/btnCoverLetter"
         app:srcCompat="@drawable/baseline_chat_24" />
 
     <ImageView
@@ -99,8 +99,8 @@
         android:layout_height="18dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/btnGoToHome2"
-        app:layout_constraintTop_toTopOf="@+id/btnGoToHome2"
+        app:layout_constraintStart_toStartOf="@+id/btnResumeClick"
+        app:layout_constraintTop_toTopOf="@+id/btnResumeClick"
         app:srcCompat="@drawable/baseline_chat_24" />
 
     <TextView

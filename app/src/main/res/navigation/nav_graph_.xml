@@ -7,19 +7,7 @@
     <fragment
         android:id="@+id/characterFragment"
         android:name="aiapplywiz.ui.character.CharacterFragment"
-        android:label="fragment_character" >
-
-        <argument
-            android:name="characterId"
-            app:argType="string" />
-
-        <action
-            android:id="@+id/action_characterFragment_to_characterDetailedFragment"
-            app:destination="@id/characterDetailedFragment"
-            app:enterAnim="@anim/anim_slide_in_left"
-            app:exitAnim="@anim/anim_slide_out_right"
-            app:popEnterAnim="@anim/anim_slide_in_right"
-            app:popExitAnim="@anim/anim_slide_out_left" />
+        android:label="fragment_character">
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -33,17 +21,22 @@
             app:exitAnim="@anim/anim_slide_out_right"
             app:popEnterAnim="@anim/anim_slide_in_right"
             app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_homeFragment_to_resumeFragment"
+            app:destination="@id/resumeFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_left"/>
+        <action
+            android:id="@+id/action_homeFragment_to_coverLetterFragment"
+            app:destination="@id/coverLetterFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_left"/>
     </fragment>
-    <fragment
-        android:id="@+id/characterDetailedFragment"
-        android:name="aiapplywiz.ui.characterdetail.CharacterDetailedFragment"
-        android:label="fragment_character_detailed"
-        tools:layout="@layout/fragment_character_detailed">
-        <argument
-            android:name="newsUrl"
-            app:argType="string" />
-    </fragment>
-    <fragment
+  <fragment
         android:id="@+id/infoFragment"
         android:name="aiapplywiz.ui.info.InfoFragment"
         android:label="fragment_info"
@@ -58,4 +51,22 @@
         android:name="aiapplywiz.ui.gift.GiftFragment"
         android:label="fragment_gift"
         tools:layout="@layout/fragment_gift" />
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="aiapplywiz.ui.resume.ResumeFragment"
+        android:label="fragment_resume"
+        tools:layout="@layout/fragment_resume" >
+        <action
+            android:id="@+id/action_resumeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coverLetterFragment"
+        android:name="aiapplywiz.ui.coverletter.CoverLetterFragment"
+        android:label="fragment_cover_letter"
+        tools:layout="@layout/fragment_cover_letter" >
+        <action
+            android:id="@+id/action_coverLetterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

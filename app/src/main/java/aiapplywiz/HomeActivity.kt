@@ -27,9 +27,9 @@ class HomeActivity : AppCompatActivity() {
             this
         ) { }
 //        setContentView(R.layout.sticker_packs_list_item);
-        mAdView = binding.adView
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+//        mAdView = binding.adView
+//        val adRequest = AdRequest.Builder().build()
+//        mAdView.loadAd(adRequest)
         setContentView(binding.root)
     }
 

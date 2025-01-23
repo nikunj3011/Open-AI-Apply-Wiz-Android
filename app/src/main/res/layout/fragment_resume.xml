@@ -1,0 +1,119 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_5"
+    android:padding="16dp"
+    tools:context=".ui.resume.ResumeFragment">
+
+    <!-- Logo and Name -->
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Job Description Input Field -->
+    <EditText
+        android:id="@+id/job_description"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Job description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <!-- Text Area with Placeholder Text -->
+    <EditText
+        android:id="@+id/cover_letter_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:hint="Please enter work experience: \n• I have X years of experience in...\n• I helped my former company achieve...\n• I think I would be a good fit because..."
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job_description" />
+
+    <!-- RadioGroup for Document Type -->
+
+    <!-- RadioGroup for Letter Length -->
+
+    <!-- Generate Button -->
+
+    <!-- Footer with Links -->
+    <RadioGroup
+        android:id="@+id/radio_group_length"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_letter_content">
+
+        <RadioButton
+            android:id="@+id/shorter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shorter" />
+
+        <RadioButton
+            android:id="@+id/standard_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Standard" />
+
+        <RadioButton
+            android:id="@+id/longer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longer" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="360dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="76dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_length" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/footer"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="© 2025 coverletter.me | Home | About | What's New | Terms of Service"-->
+    <!--        android:textSize="12sp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/generate_button"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginBottom="16dp" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

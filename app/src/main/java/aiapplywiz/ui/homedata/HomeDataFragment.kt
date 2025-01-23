@@ -15,10 +15,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import aiapplywiz.databinding.FragmentHomeDataBinding
+import aiapplywiz.ui.characterinfo.InfoBottomSheetFragment
+import aiapplywiz.ui.resume.ResumeFragment
 import aiapplywiz.util.autoCleared
 import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.time.LocalTime
@@ -33,6 +36,18 @@ class HomeDataFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnResumeClick.setOnClickListener {
+            // Navigate to a new fragment using NavController
+            val navController = findNavController()
+            navController.navigate(R.id.action_homeFragment_to_resumeFragment)
+        }
+
+        binding.btnCoverLetter.setOnClickListener {
+            // Navigate to a new fragment using NavController
+            val navController = findNavController()
+            navController.navigate(R.id.action_homeFragment_to_coverLetterFragment)
+        }
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
